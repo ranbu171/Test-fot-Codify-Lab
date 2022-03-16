@@ -16,7 +16,7 @@ export default function InputForTask () {
       const taskToChange = tasks.find((task) => task.id === taskId);
       setInputValue(taskToChange.title);
     }
-  },[taskId])
+  },[taskId, tasks])
 
 // function to save changes of Task or creacte new Task
   const saveTask = () => {
